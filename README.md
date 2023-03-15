@@ -8,7 +8,7 @@
     
     # activating the virtual machine
     
-        py venv\Scripts\activate 
+        venv\Scripts\activate 
     
     # creating APP
     
