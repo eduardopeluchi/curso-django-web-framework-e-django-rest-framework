@@ -13,3 +13,13 @@
     # creating APP
     
         py manage.py startapp recipes 
+        
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+# Render
+
+    render(request, 'template path -> file)
+    example: render(request, 'home.html')
+    
+# Emmet Abbreviation ( ! )
+    When using the caractere ~!~ generates a generic html.
