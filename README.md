@@ -17,7 +17,13 @@
     
         py manage.py startapp recipes 
         
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+    # collect static
+        
+        First of all please configure in settings.py the STATIC_ROOT
+            STATIC_ROOT = BASE_DIR / 'static'
+        
+        py manage.py collectstatic
+        
 
 # Render
 
@@ -70,3 +76,25 @@
             background: var(--color-primary-dark);
             }
                 
+
+# Static Files
+    
+     - Static files are file who will be delivered exactly as they was saved.
+    This files almost don`t have changes so the browser can save this files on cache
+    to the page content could be loaded faster.
+    Frequently sites can add you static content to the CDNs (Content Delivery Network) who are optimized
+    to deliver static files with fast delivery as to keeping this files close to the final user.
+
+# Namespacing
+
+    Help us during the developement to don`t have any issue with names collision for example
+    when you have two files or folders with the same name so when django is running and a
+    collision happen the django will executure one of the two file and could be the wrong one.
+    
+    So always as possible give different names to your folder ou file.
+    
+    Example:
+         
+         base_static/global(*namespacing*)/css/global-style.css
+         recipes/static/recipes(*namespacing*)/css/style.css
+         
