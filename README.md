@@ -18,6 +18,9 @@
         py manage.py startapp recipes 
         
     # collect static
+    
+        Django can collect the static files and save them all in one folde to be easy
+        to manage them.
         
         First of all please configure in settings.py the STATIC_ROOT
             STATIC_ROOT = BASE_DIR / 'static'
@@ -89,9 +92,9 @@
 
     Help us during the developement to don`t have any issue with names collision for example
     when you have two files or folders with the same name so when django is running and a
-    collision happen the django will executure one of the two file and could be the wrong one.
+    collision happen the django will executu one of the two file and could be the wrong one.
     
-    So always as possible give different names to your folder ou file.
+    So always as possible give different names to your folder or file.
     
     Example:
          
